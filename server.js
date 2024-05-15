@@ -14,6 +14,8 @@ app.use(express.json());
 // Adding middleware to express project
 app.use("/api/contacts", require("./routes/contactRoutes"));
 
+app.use("/api/users", require("./routes/userRoutes"));
+
 // Use custom error handler
 app.use(errorHandler);
 
